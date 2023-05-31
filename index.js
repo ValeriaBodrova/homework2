@@ -1,9 +1,12 @@
+//task1
 let name = prompt("What is your name?");
 
 if (name === "John") {
   alert("Hello, John! How are you?");
 }
 
+
+//task2
 let number1 = parseInt(prompt("Enter a number"));
 let number2 = parseInt(prompt("Enter second number"));
 
@@ -25,3 +28,13 @@ if (number1 > 0 && number2 > 0 && operation === "add") {
 }
 
 
+//task3
+
+let value1 = prompt("Enter value");
+let value2 = prompt("Enter second value");
+
+if (value1 === value2){
+    alert("true");
+} else if (value1 !== value2) {
+    alert("false");
+}
