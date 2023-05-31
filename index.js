@@ -38,3 +38,25 @@ if (value1 === value2){
 } else if (value1 !== value2) {
     alert("false");
 }
+
+//task4
+
+let num1 = parseInt(prompt("Enter number"));
+let num2 = parseInt(prompt("Enter second number"));
+let num3 = parseInt(prompt("Enter trird number"));
+
+let sum1 = num1 + num2 + num3;
+let count = Math.round(num1 + num2 + num3 / sum1);
+
+if (num1 > 0 && num2 > 0 && num3 > 0){
+    alert(`Arithmetic mean: ${num1} + ${num2} + ${num3} / sum = ${count}`);
+}
+
+
+//task5 Взагалі не розумію, як можна використати оператор по модулю, буду вдячна, якщо покажете
+
+let numtask5 = prompt("Enter five-digit number");
+
+let array = (""+numtask5).split("").map(Number);
+alert(`${array}`);
+
