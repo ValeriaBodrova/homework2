@@ -4,10 +4,24 @@ if (name === "John") {
   alert("Hello, John! How are you?");
 }
 
-let number1 = prompt("Enter a number");
-let number2 = prompt("Enter second number");
-let operation = prompt("Select and enter the operation: "+" "-" "*" "/"");
+let number1 = parseInt(prompt("Enter a number"));
+let number2 = parseInt(prompt("Enter second number"));
 
-if (number1 > 0 && number2 > 0 && operation === "+") {
-    alert(`"Result:" ${number1} + ${number2}`);
+let operation = prompt("Select and enter the operation: add, subtract, multiply, divide");
+
+let sum = number1 + number2;
+let difference = number1 - number2;
+let product = number1 * number2;
+let quotient = number1 / number2;
+
+if (number1 > 0 && number2 > 0 && operation === "add") {
+    alert(`Result: ${number1} + ${number2} = ${sum}`);
+} else if (number1 > 0 && number2 > 0 && operation === "subtract"){
+    alert(`Result: ${number1} - ${number2} = ${difference}`);
+} else if (number1 > 0 && number2 > 0 && operation === "multiply"){
+    alert(`Result: ${number1} * ${number2} = ${product}`);
+} else if (number1 > 0 && number2 > 0 && operation === "divide"){
+    alert(`Result: ${number1} / ${number2} = ${quotient}`);
 }
+
+
